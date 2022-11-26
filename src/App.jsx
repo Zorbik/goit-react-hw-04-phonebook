@@ -57,17 +57,15 @@ class App extends Component {
 
   render() {
     const visibleContacts = this.getVisibleContacts();
+    const { filter, contacts } = this.state;
     return (
       <Box width="px" mx="auto" my={5} p={4} boxShadow="normal">
         <Section title="Phonebook">
           <FormInputContact onSubmit={this.onFormSubmit} />
         </Section>
         <Section title="Contacts">
-          {visibleContacts.length ? (
-            <Filter
-              value={this.state.filter}
-              onChange={this.changeFilterHandler}
-            />
+          {contacts.length ? (
+            <Filter value={filter} onChange={this.changeFilterHandler} />
           ) : (
             ''
           )}

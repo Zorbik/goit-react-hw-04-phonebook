@@ -37,8 +37,7 @@ export const Button = styled.button`
   color: ${p => p.theme.colors.white};
   padding: ${p => p.theme.space[3]}px;
   cursor: pointer;
-  :hover,
-  :focus {
+  :hover {
     background-color: ${p => p.theme.colors.white};
     color: ${p => p.theme.colors.blue};
   }
