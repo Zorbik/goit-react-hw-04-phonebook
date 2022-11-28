@@ -1,6 +1,5 @@
-import { Contact } from './Contact';
+import { Box, Contact } from '../../components';
 import PropTypes from 'prop-types';
-import { Box } from '../Box';
 
 export function ContactsList({ options, onDeleteContact }) {
   return (

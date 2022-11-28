@@ -1,9 +1,11 @@
 import { Component } from 'react';
-import { Box } from './components/Box';
-import FormInputContact from './components/Form/FormInputContact';
-import { Section } from './components/Section/Section';
-import { ContactsList } from './components/ContactsList/ContactsList';
-import { Filter } from './components/Form/Filter';
+import {
+  Box,
+  Section,
+  FormInputContact,
+  Filter,
+  ContactsList,
+} from './components';
 
 const STORAGE_KEY = 'phonebook';
 

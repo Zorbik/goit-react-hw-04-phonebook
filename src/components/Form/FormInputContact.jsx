@@ -3,7 +3,7 @@ import { nanoid } from 'nanoid';
 import { Form, Input, Label, Button } from './FormInputContact.styled';
 import PropTypes from 'prop-types';
 
-class FormInputContact extends Component {
+export class FormInputContact extends Component {
   state = {
     name: '',
     number: '',
@@ -54,8 +54,6 @@ class FormInputContact extends Component {
     );
   }
 }
-
-export default FormInputContact;
 
 FormInputContact.propTypes = {
   onSubmit: PropTypes.func.isRequired,
